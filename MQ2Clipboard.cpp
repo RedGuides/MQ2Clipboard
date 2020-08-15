@@ -1,4 +1,4 @@
-#include "../MQ2Plugin.h"
+#include <mq/Plugin.h>
 
 PLUGIN_VERSION(0.1);
 PreSetup("MQ2Clipboard");
