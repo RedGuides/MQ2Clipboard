@@ -126,7 +126,7 @@ void SetClipboardString(const std::string &str)
 	}
 	else
 	{
-		if (!SetClipboardDataEx(CF_TEXT, strToCopy.c_str(), strToCopy.length() + 1))
+		if (!SetClipboardDataEx(CF_TEXT, strToCopy.c_str(), (int)strToCopy.length() + 1))
 		{
 			WriteChatf("MQ2Clipboard failed to clear existing clipboard content");
 		}
